@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Krischelle N. De Villa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav id="mainNav" class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Krischelle<span>.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+      <ul class="navbar-nav align-items-lg-center gap-lg-1 mt-3 mt-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#certifications">Certifications</a></li>
+        <li class="nav-item"><a class="nav-link nav-cta" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="about" style="padding-top: 120px;">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 d-flex justify-content-center justify-content-lg-start">
+        <div class="about-img-wrap">
+          <img src="hero-profile.jpeg" alt="Krischelle N. De Villa" class="about-photo" />
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <p class="section-label">Who I Am</p>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-divider"></div>
+        <p class="mb-4" style="font-size:1rem;color:var(--text-muted);line-height:1.9;text-align:justify;">
+          I am a 2nd year college student currently studying and practicing Web Development.
+          My main focus is learning how to build responsive and user-friendly websites using
+          <strong>HTML, CSS, JavaScript</strong>, and modern frameworks like
+          <strong>Tailwind CSS</strong>.
+        </p>
+        <p class="mb-4" style="font-size:1rem;color:var(--text-muted);line-height:1.9;text-align:justify;">
+          Beyond code, I enjoy exploring UI/UX principles in Figma and creating
+          visual content in Canva. I believe great design and clean code go
+          hand-in-hand to deliver delightful user experiences.
+        </p>
+        <div class="row g-3 mb-4">
+          <div class="col-4">
+            <div class="about-stat">
+              <strong>2nd</strong>
+              <span>Year Student</span>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="about-stat">
+              <strong>8+</strong>
+              <span>Skills Learned</span>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="about-stat">
+              <strong>3+</strong>
+              <span>Projects Built</span>
+            </div>
+          </div>
+        </div>
+        <a href="contact.html" class="btn-accent">
+          <i class="bi bi-chat-dots"></i> Let's Connect
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
+</script>
+</body>
+</html>

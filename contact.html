@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Krischelle N. De Villa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav id="mainNav" class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Krischelle<span>.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+      <ul class="navbar-nav align-items-lg-center gap-lg-1 mt-3 mt-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#certifications">Certifications</a></li>
+        <li class="nav-item"><a class="nav-link nav-cta active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="contact" style="padding-top: 120px;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <p class="section-label">Say Hello</p>
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="section-divider mx-auto"></div>
+      <p class="text-muted mx-auto" style="max-width:480px;font-size:.95rem;">
+        Have a project idea, collaboration, or just want to say hi?
+        My inbox is always open.
+      </p>
+    </div>
+    <div class="row g-4 align-items-start">
+      <div class="col-lg-5">
+        <div class="contact-card h-100">
+          <h4 style="font-size:1.3rem;margin-bottom:1.5rem;">Contact Info</h4>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+              <h6>Email</h6>
+              <a href="mailto:devillakrischelle29@gmail.com">devillakrischelle29@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <h6>Based In</h6>
+              <span>Philippines 🇵🇭</span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="bi bi-mortarboard-fill"></i></div>
+            <div>
+              <h6>Status</h6>
+              <span>2nd Year College Student</span>
+            </div>
+          </div>
+          <hr style="border-color:var(--border);margin:1.5rem 0;" />
+          <p style="font-size:.85rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.75rem;">
+            Find Me Online
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/Krischelledv" class="social-link" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.facebook.com/kedvlla?rdid=HtOfgwgCRjmj9vy3&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1NdjQKnb3G%2F" class="social-link" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/krischelle.dvll?igsh=b2VoeWIwMWd4cmJo" class="social-link" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="contact-card">
+          <h4 style="font-size:1.3rem;margin-bottom:1.5rem;">Send a Message</h4>
+          <form id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="contactName" class="form-label">Your Name</label>
+                <input type="text" id="contactName" name="name" class="form-control" placeholder="e.g. Maria Santos" required autocomplete="name" />
+              </div>
+              <div class="col-sm-6">
+                <label for="contactEmail" class="form-label">Email Address</label>
+                <input type="email" id="contactEmail" name="email" class="form-control" placeholder="you@example.com" required autocomplete="email" />
+              </div>
+              <div class="col-12">
+                <label for="contactSubject" class="form-label">Subject</label>
+                <input type="text" id="contactSubject" name="subject" class="form-control" placeholder="What's this about?" />
+              </div>
+              <div class="col-12">
+                <label for="contactMessage" class="form-label">Message</label>
+                <textarea id="contactMessage" name="message" class="form-control" placeholder="Write your message here…" rows="5" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-accent w-100 justify-content-center py-3" id="submitBtn" style="border-radius:10px;">
+                  <i class="bi bi-send-fill"></i> Send Message
+                </button>
+                <div id="formFeedback" class="mt-3" aria-live="polite"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    const fb = document.getElementById('formFeedback');
+    btn.innerHTML = '<i class="bi bi-hourglass-split"></i> Sending…';
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.innerHTML = '<i class="bi bi-check-circle-fill"></i> Message Sent!';
+      btn.style.background = '#4caf82';
+      fb.innerHTML = '<p style="color:#4caf82;font-size:.88rem;"><i class="bi bi-check-circle"></i> Thanks! I\'ll get back to you soon.</p>';
+      this.reset();
+      setTimeout(() => {
+        btn.innerHTML = '<i class="bi bi-send-fill"></i> Send Message';
+        btn.style.background = '';
+        btn.disabled = false;
+        fb.innerHTML = '';
+      }, 4000);
+    }, 1400);
+  });
+</script>
+</body>
+</html>
